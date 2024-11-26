@@ -3,6 +3,7 @@ import FeaturesCard from "@components/FeaturesCard.astro";
 import Layout from "@layouts/Layout.astro";
 import ColumnsLayout from "@layouts/ColumnsLayout.astro";
 import Section from "@components/Section.astro";
+import ConsultasPicture from "@components/ConsultasPicture.astro";
 ---
 
 <Layout title='Consultas y Reportes'>
@@ -51,20 +52,10 @@ import Section from "@components/Section.astro";
           El sistema proporciona información sobre el profesional a cargo, servicio brindado y
           la informacion de costos y precios.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ordenes-de-trabajo/ordenes-de-trabajo.png"
-            alt="Captura de pantalla de ordenes de trabajo"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ordenes-de-trabajo/ordenes-de-trabajo.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ordenes-de-trabajo/ordenes-de-trabajo.png"
+          imgAlt="Captura de pantalla de consultas de resumenes de cierre"
+        />
       </Section>
 
       <Section id="ordenes-ot-vehiculo">
@@ -77,20 +68,10 @@ import Section from "@components/Section.astro";
           Además, cuenta con la información del cliente, vehículo registrado (marca y modelo),
           transmisión y kilometraje.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ordenes-de-trabajo/ot-por-vehiculo.png"
-            alt="Captura de pantalla de ordenes de trabajo por vehículo"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ordenes-de-trabajo/ot-por-vehiculo.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ordenes-de-trabajo/ot-por-vehiculo.png"
+          imgAlt="Captura de pantalla de ordenes de trabajo por vehículo"
+        />
       </Section>
 
       <Section id="ordenes-servicios">
@@ -103,20 +84,10 @@ import Section from "@components/Section.astro";
           Contiene información sobre el servicio aplicado, cliente y vehículo, precios y costos,
           tiempo estimado y tiempo requerido para completar la orden.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ordenes-de-trabajo/servicios.png"
-            alt="Captura de pantalla de servicios en ordenes de trabajo"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ordenes-de-trabajo/servicios.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ordenes-de-trabajo/servicios.png"
+          imgAlt="Captura de pantalla de servicios en ordenes de trabajo"
+        />
       </Section>
 
       <Section id="ordenes-comisiones">
@@ -130,20 +101,10 @@ import Section from "@components/Section.astro";
           Puede aplicar filtros por fecha, servicio específico y profesionales registrados en el
           sistema.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ordenes-de-trabajo/comisiones.png"
-            alt="Captura de pantalla de comisiones por ordenes de trabajo"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ordenes-de-trabajo/comisiones.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ordenes-de-trabajo/comisiones.png"
+          imgAlt="Captura de pantalla de comisiones por ordenes de trabajo"
+        />
       </Section>
 
       <Section id="consultas-inventario">
@@ -169,20 +130,10 @@ import Section from "@components/Section.astro";
           Además, señaliza el tipo de movimiento con una "S" en caso de salidas, y "E", para entradas.
           El sistema indicará la cantidad para cada producto.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/inventario/mov-por-fecha.png"
-            alt="Captura de pantalla de consultas por movimiento de fecha en inventario"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/inventario/mov-por-fecha.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/inventario/mov-por-fecha.png"
+          imgAlt="Captura de pantalla de consultas por movimiento de fecha en inventario"
+        />
       </Section>
 
       <Section id="inventario-mov-producto">
@@ -198,20 +149,10 @@ import Section from "@components/Section.astro";
           estado de stock crítico. También, registra el movimiento realizado, ya sea compra o venta y
           la cantidad.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/inventario/mov-por-producto.png"
-            alt="Captura de movimientos por producto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/inventario/mov-por-producto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/inventario/mov-por-producto.png"
+          imgAlt="Captura de movimientos por producto"
+        />
       </Section>
 
       <Section id="inventario-valuacion-inventario">
@@ -224,20 +165,10 @@ import Section from "@components/Section.astro";
           Puede realizar búsquedas valorando el costo promedio o el último costo, al igual que
           filtrar por categorías y sub categorías.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/inventario/valuacion-inventario.png"
-            alt="Captura de pantalla de consultas sobre valuación de inventario"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/inventario/valuacion-inventario.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/inventario/valuacion-inventario.png"
+          imgAlt="Captura de pantalla de consultas sobre valuación de inventario"
+        />
       </Section>
 
       <Section id="consultas-ventas">
@@ -264,20 +195,10 @@ import Section from "@components/Section.astro";
           Permite filtrar búsquedas por cliente, tipo de venta (contado o crédito) y
           consultar por fechas o periodos específicos.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/por-cliente.png"
-            alt="Captura de pantalla sobre consultas de ventas por cliente"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/por-cliente.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/por-cliente.png"
+          imgAlt="Captura de pantalla sobre consultas de ventas por cliente"
+        />
       </Section>
 
       <Section id="ventas-por-producto">
@@ -292,20 +213,10 @@ import Section from "@components/Section.astro";
           venta. Permite reconocer los productos con mayor demanda, ayudando en la
           planificación de inventario y estrategias de venta.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/por-producto.png"
-            alt="Captura de pantalla de consultas sobre ventas por producto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/por-producto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/por-producto.png"
+          imgAlt="Captura de pantalla de consultas sobre ventas por producto"
+        />
       </Section>
 
       <Section id="ventas-resumen-producto">
@@ -319,20 +230,10 @@ import Section from "@components/Section.astro";
           Cuenta con filtros por categorías, sub categorías o todos los productos.
           Además, puede consultar por fechas determinadas.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/resumen-x-producto.png"
-            alt="Captura de pantalla de consultas de resumen por producto en inventario"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/resumen-x-producto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/resumen-x-producto.png"
+          imgAlt="Captura de pantalla de consultas de resumen por producto en inventario"
+        />
       </Section>
 
       <Section id="ventas-resumen-servicio">
@@ -345,20 +246,10 @@ import Section from "@components/Section.astro";
           Los datos pueden obtenerse por categorías o para todos los servicios
           que la sucursal tiene en inventario.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/resumen-x-servicio.png"
-            alt="Captura de pantalla de consultas del resumen por servicio en inventario"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/resumen-x-servicio.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/resumen-x-servicio.png"
+          imgAlt="Captura de pantalla de consultas del resumen por servicio en inventario"
+        />
       </Section>
 
       <Section id="ventas-por-servicio">
@@ -371,20 +262,10 @@ import Section from "@components/Section.astro";
           Permite obtener información sobre el cliente, precios y costos. Además
           de la cantidad para el servicio adquirido.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/por-servicio.png"
-            alt="Captura de pantalla de consultas por servicio en inventario"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/por-servicio.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/por-servicio.png"
+          imgAlt="Captura de pantalla de consultas por servicio en inventario"
+        />
       </Section>
 
       <Section id="ventas-por-impuesto">
@@ -399,20 +280,10 @@ import Section from "@components/Section.astro";
           El sistema indica el cliente y cantidades totales para cada producto adquirido
           durante el periodo determinado.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/por-impuesto.png"
-            alt="Captura de pantalla de consultas sobre ventas por impuesto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/por-impuesto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/por-impuesto.png"
+          imgAlt="Captura de pantalla de consultas sobre ventas por impuesto"
+        />
       </Section>
 
       <Section id="ventas-por-comisiones">
@@ -426,20 +297,10 @@ import Section from "@components/Section.astro";
           Muestra información de la fecha de la venta, cliente y vendedor.
           Al igual que los porcentajes y montos correspondientes a la venta.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/ventas/comisiones.png"
-            alt="Captura de pantalla de ventas por comisiones"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/ventas/comisiones.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/ventas/comisiones.png"
+          imgAlt="Captura de pantalla de ventas por comisiones"
+        />
       </Section>
 
       <Section id="consultas-compras">
@@ -465,20 +326,10 @@ import Section from "@components/Section.astro";
           El sistema permite realizar búsquedas para cada proveedor registrado, además de aplicar
           filtros por método de pago, ya sea de contado o crédito.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/compras/por-proveedor.png"
-            alt="Captura de pantalla de compras por proveedor"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/compras/por-proveedor.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/compras/por-proveedor.png"
+          imgAlt="Captura de pantalla de compras por proveedor"
+        />
       </Section>
 
       <Section id="compras-por-producto">
@@ -492,20 +343,10 @@ import Section from "@components/Section.astro";
           Aplica filtros por fecha, por categorías y sub categorías. También cuenta con la posibilidad
           de realizar búsquedas para cada producto y consultar específicamente por cada uno de ellos.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/compras/por-producto.png"
-            alt="Captura de pantalla de consultas de ventas por producto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/compras/resumen-x-producto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/compras/por-producto.png"
+          imgAlt="Captura de pantalla de consultas de ventas por producto"
+        />
       </Section>
 
       <Section id="compras-resumen-producto">
@@ -518,20 +359,10 @@ import Section from "@components/Section.astro";
           Puede realizar la consulta por categorías, sub categorías o para todos los productos adquiridos
           durante la fecha determinada.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/compras/resumen-x-producto.png"
-            alt="Captura de pantalla de consultas del resumen de compras por producto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/compras/resumen-x-producto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/compras/resumen-x-producto.png"
+          imgAlt="Captura de pantalla de consultas del resumen de compras por producto"
+        />
       </Section>
 
       <Section id="compras-por-impuesto">
@@ -544,20 +375,10 @@ import Section from "@components/Section.astro";
           Se muestra la fecha de la compra, el tipo de documento para la compra, proveedor, y
           totales para el período de tiempo a consultar.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/compras/por-impuesto.png"
-            alt="Captura de pantalla de consulta de compras por impuesto"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/compras/por-impuesto.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/compras/por-impuesto.png"
+          imgAlt="Captura de pantalla de consulta de compras por impuesto"
+        />
       </Section>
 
       <Section id="consultas-resumen-cierres">
@@ -571,78 +392,10 @@ import Section from "@components/Section.astro";
           Permite comparar los cierres de caja en diferentes periodos para identificar
           patrones o inconsistencias.
         </p>
-        <picture class="consultas-picture">
-          <img
-            src="/consultas-y-reportes/resumen-de-cierres/resumen-de-cierres.png"
-            alt="Captura de pantalla de consultas de resumenes de cierre"
-          >
-          <div class="picture-modal">
-            <img
-              class="picture-modal-img"
-              src="/consultas-y-reportes/resumen-de-cierres/resumen-de-cierres.png"
-              alt="Captura de pantalla de consultas de resumenes de cierre"
-              loading="lazy"
-            >
-          </div>
-        </picture>
+        <ConsultasPicture
+          imgSrc="/consultas-y-reportes/resumen-de-cierres/resumen-de-cierres.png"
+          imgAlt="Captura de pantalla de consultas de resumenes de cierre"
+        />
       </Section>
   </ColumnsLayout>
 </Layout>
-
-<style>
-  .consultas-picture { cursor: zoom-in }
-  
-  .consultas-picture img {
-    width: 100%;
-    display: block;
-    height: auto;
-    margin-top: 2rem;
-    border-radius: 10px;
-		box-shadow: 0px 5px 30px rgba(0 0 0 / .1);
-  }
-
-  .consultas-picture.modal .picture-modal {
-    display: flex;
-    transition: opacity .1s ease-in-out;
-    opacity: 1;
-
-    @starting-style { opacity: 0 }
-  }
-
-  .picture-modal {
-    cursor: zoom-out;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-    margin-top: 0px;
-    background-color: var(--bg-primary-op);
-    opacity: 0;
-    transition: opacity .1s ease-in-out, display .1s ease-in-out allow-discrete;
-    overflow-x: auto;
-    
-    & img {
-      display: block;
-      width: 1300px;
-      height: auto;
-      margin-inline: auto;
-      border-radius: 0px;
-    }
-  }
-</style>
-
-<script>
-  document.addEventListener('astro:page-load', () => {
-    const pictures = document.querySelectorAll<HTMLElement>('.consultas-picture')
-    pictures.forEach(picture => {
-      picture.addEventListener('click', () => {
-        picture.classList.toggle('modal')
-        picture.classList.toggle('no-scroll')
-      })
-    })
-  })
-</script>
