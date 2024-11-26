@@ -1,0 +1,71 @@
+---
+import { adminElements, adminBranchElements } from "@consts/adminElements"
+import { cashierElements } from "@consts/cashierElements"
+
+const { pathname } = Astro.url
+const normalizedPathName =
+  pathname.length > 1 && pathname.endsWith("/")
+    ? pathname.slice(0, -1) : pathname
+---
+
+<aside class="sidebar">
+  {Astro.url.pathname.includes('admin') && (
+    <h3>Administrador</h3>
+    <nav>
+      <ul>
+        {adminElements && adminElements.map(({ label, href, icon: Icon }) => (
+          <li>
+            <a href={href} class:list={[
+                "sidebar-item",
+                { "sidebar-active" : normalizedPathName.includes(`${href}`) }
+              ]}>
+              <Icon />
+              <span>{label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <hr class="sidebar-separator">
+
+    <h3 class="sucursal-title">Sucursal</h3>
+    <nav>
+      <ul>
+        {adminBranchElements && adminBranchElements.map(({ label, href, icon: Icon }) => (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                "sidebar-item",
+                { "sidebar-active" : normalizedPathName.includes(`${href}`) }
+              ]}
+            >
+              <Icon />
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  {Astro.url.pathname.includes('cajero') && (
+    <h3>Cajero</h3>
+    <nav>
+      <ul>
+        {cashierElements && cashierElements.map(({ label, href, icon: Icon }) => (
+          <li>
+            <a href={href} class:list={[
+                "sidebar-item",
+                { "sidebar-active" : normalizedPathName.includes(`${href}`) }
+              ]}>
+              <Icon />
+              <span>{label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+</aside>
