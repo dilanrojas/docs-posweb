@@ -25,7 +25,6 @@ const { title } = Astro.props
     background-color: var(--bg-contrast-2);
     padding: 2em;
     border-radius: 15px;
-    font-size: .875em;
     box-shadow: 0px 10px 20px rgba(0 0 0 / .1);
     border: 1px solid var(--accent)
   }
@@ -34,20 +33,14 @@ const { title } = Astro.props
     display: flex;
     align-items: center;
     gap: .7rem;
-    font-size: 1.25rem!important;
     margin-bottom: 1em;
 
     & svg { width: 14px }
   }
 
-  .features-card p {
-    font-size: 1rem;
-  }
-
   @media (width <= 700px) {
     .features-card { padding: 1.5em; }
   }
-  
   
   .features-card ul {
     margin-left: 1.79rem;
